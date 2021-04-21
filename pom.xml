@@ -4,7 +4,7 @@
 
     <groupId>org.barberini</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -97,7 +97,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/barbero71/sfg-pet-clinic.git</developerConnection>
-      <tag>sfg-pet-clinic-0.0.3</tag>
+      <tag>sfg-pet-clinic-1.0.2</tag>
   </scm>
 
 </project>
