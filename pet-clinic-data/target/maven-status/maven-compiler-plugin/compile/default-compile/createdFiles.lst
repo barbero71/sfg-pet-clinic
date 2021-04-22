@@ -1,5 +1,8 @@
 org\barberini\sfgpetclinic\model\Vet.class
-org\barberini\sfgpetclinic\model\Owner.class
+org\barberini\sfgpetclinic\services\PetService.class
 org\barberini\sfgpetclinic\model\Person.class
+org\barberini\sfgpetclinic\services\VetService.class
+org\barberini\sfgpetclinic\model\Owner.class
 org\barberini\sfgpetclinic\model\Pet.class
 org\barberini\sfgpetclinic\model\PetType.class
+org\barberini\sfgpetclinic\services\OwnerService.class
