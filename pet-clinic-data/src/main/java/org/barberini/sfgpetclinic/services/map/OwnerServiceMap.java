@@ -2,9 +2,11 @@ package org.barberini.sfgpetclinic.services.map;
 
 import org.barberini.sfgpetclinic.model.Owner;
 import org.barberini.sfgpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override

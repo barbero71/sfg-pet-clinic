@@ -3,9 +3,11 @@ package org.barberini.sfgpetclinic.services.map;
 import org.barberini.sfgpetclinic.model.Pet;
 import org.barberini.sfgpetclinic.services.CrudService;
 import org.barberini.sfgpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
