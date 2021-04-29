@@ -1,12 +1,9 @@
 package org.barberini.sfgpetclinic.bootstrap;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 import org.barberini.sfgpetclinic.model.Owner;
 import org.barberini.sfgpetclinic.model.Vet;
 import org.barberini.sfgpetclinic.services.OwnerService;
 import org.barberini.sfgpetclinic.services.VetService;
-import org.barberini.sfgpetclinic.services.map.OwnerServiceMap;
-import org.barberini.sfgpetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
