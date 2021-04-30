@@ -1,1 +1,5 @@
+org\barberini\sfgpetclinic\controllers\IndexController.class
+org\barberini\sfgpetclinic\controllers\VetController.class
+org\barberini\sfgpetclinic\controllers\OwnerController.class
 org\barberini\sfgpetclinic\SfgPetClinicApplication.class
+org\barberini\sfgpetclinic\bootstrap\DataLoader.class
