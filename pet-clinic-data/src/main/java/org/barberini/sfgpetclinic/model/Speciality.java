@@ -5,8 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "specialties")
-public class Specialty extends BaseEntity {
+@Table(name = "specialities")
+public class Speciality extends BaseEntity {
 
     @Column(name = "description")
     private String description;

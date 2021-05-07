@@ -1,8 +1,7 @@
 package org.barberini.sfgpetclinic.services.map;
 
-import org.barberini.sfgpetclinic.model.Specialty;
+import org.barberini.sfgpetclinic.model.Speciality;
 import org.barberini.sfgpetclinic.model.Vet;
-import org.barberini.sfgpetclinic.services.CrudService;
 import org.barberini.sfgpetclinic.services.SpecialtyService;
 import org.barberini.sfgpetclinic.services.VetService;
 import org.springframework.stereotype.Service;
@@ -34,7 +33,7 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements VetS
         if (object.getSpecialties().size() > 0) {
             object.getSpecialties().forEach(specialty -> {
                 if (specialty.getId() == null) {
-                    Specialty savedSpecialty = specialtyService.save(specialty);
+                    Speciality savedSpecialty = specialtyService.save(specialty);
                     specialty.setId(savedSpecialty.getId());
                 }
             });
