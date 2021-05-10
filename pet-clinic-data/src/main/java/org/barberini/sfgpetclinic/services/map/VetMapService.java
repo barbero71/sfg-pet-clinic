@@ -2,7 +2,7 @@ package org.barberini.sfgpetclinic.services.map;
 
 import org.barberini.sfgpetclinic.model.Speciality;
 import org.barberini.sfgpetclinic.model.Vet;
-import org.barberini.sfgpetclinic.services.SpecialtyService;
+import org.barberini.sfgpetclinic.services.SpecialityService;
 import org.barberini.sfgpetclinic.services.VetService;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +11,10 @@ import java.util.Set;
 @Service
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
-    private final SpecialtyService specialtyService;
+    private final SpecialityService specialityService;
 
-    public VetMapService(SpecialtyService specialtyService) {
-        this.specialtyService = specialtyService;
+    public VetMapService(SpecialityService specialityService) {
+        this.specialityService = specialityService;
     }
 
     @Override
@@ -33,7 +33,7 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements VetS
         if (object.getSpecialties().size() > 0) {
             object.getSpecialties().forEach(specialty -> {
                 if (specialty.getId() == null) {
-                    Speciality savedSpecialty = specialtyService.save(specialty);
+                    Speciality savedSpecialty = specialityService.save(specialty);
                     specialty.setId(savedSpecialty.getId());
                 }
             });

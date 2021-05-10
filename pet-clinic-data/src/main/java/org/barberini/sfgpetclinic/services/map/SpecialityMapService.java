@@ -1,13 +1,13 @@
 package org.barberini.sfgpetclinic.services.map;
 
 import org.barberini.sfgpetclinic.model.Speciality;
-import org.barberini.sfgpetclinic.services.SpecialtyService;
+import org.barberini.sfgpetclinic.services.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialtyMapService extends AbstractMapService<Speciality, Long> implements SpecialtyService {
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {
 
     @Override
     public Set<Speciality> findAll() {
