@@ -1,10 +1,7 @@
 package org.barberini.sfgpetclinic.bootstrap;
 
 import org.barberini.sfgpetclinic.model.*;
-import org.barberini.sfgpetclinic.services.OwnerService;
-import org.barberini.sfgpetclinic.services.PetTypeService;
-import org.barberini.sfgpetclinic.services.SpecialityService;
-import org.barberini.sfgpetclinic.services.VetService;
+import org.barberini.sfgpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,12 +14,14 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -92,6 +91,16 @@ public class DataLoader implements CommandLineRunner {
         ownerService.save(owner2);
 
         System.out.println("Loaded Owners...");
+
+        Visit catVisit = new Visit();
+        catVisit.setOwner(owner2);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setPet(fionasPet);
+        catVisit.setDescription("Sneezy Kitty");
+
+        visitService.save(catVisit);
+
+        System.out.println("Loaded Visits...");
 
         Vet vet1 = new Vet();
         vet1.setFirstName("Sam");

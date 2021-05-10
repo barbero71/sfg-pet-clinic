@@ -8,6 +8,9 @@ import java.util.Set;
 @Table(name = "owners")
 public class Owner extends Person {
 
+    @Column(name = "id")
+    private Long id;
+
     @Column(name = "address")
     private String address;
 
@@ -19,6 +22,16 @@ public class Owner extends Person {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();
+
+    @Override
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getAddress() {
         return address;
