@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/springframeworkguru/sfg-pet-clinic.svg?style=svg)](https://circleci.com/gh/springframeworkguru/sfg-pet-clinic)
-
 # Spring Framework Guru Pet Clinic
+
+[![CircleCI](https://circleci.com/gh/barbero71/sfg-pet-clinic.svg?style=svg&circle-token=48f45779fd0a26f454fcc41ea9c98060a63bf462)](https://github.com/barbero71/sfg-pet-clinic.git)
 
 This repo is for my online course called [Spring Framework 5: Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/?couponCode=GITHUB_SFGPETCLINIC).
 
